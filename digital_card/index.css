@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/static/Inter-Regular.ttf') ;
+  }
+
+  @font-face {
+    font-family: 'Inter2';
+    src: url('fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') ;
+  }
+
+body {
+    background-color: rgba(10, 12, 28, 1);
+}
+
+section{
+    margin: auto auto;
+}
+.main{
+    display: flex;
+    background: rgba(27, 25, 55, 1);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 1200px;
+    margin: 100px auto 100px auto;
+    border-radius: 10px; 
+    
+}
+.main img{
+    width:  605px;
+    height: 500px;
+    filter: opacity(0.8) drop-shadow(0 0 rgb(171, 92, 219, 1));
+}
+
+.section{
+    width: 370px;
+    height: 350px;
+    color: white;
+    margin-left: 80px;
+}
+
+.section p{
+    opacity: 0.6;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.section h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+}
+.section h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 44px;
+}
+
+.buttom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.buttom p{
+    font-family: 'Inter2';
+    text-transform: uppercase;
+}
+
+.writings{
+    margin-top: 50px ;
+
+}
+.writings p {
+    margin: 0px;
+}
+.writings h3 {
+    margin: 0px;
+}
+span{
+    color: rgba(171, 92, 219, 1);
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        display: flex;
+        background: rgba(27, 25, 55, 1);
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 500px;
+        height: 1200px;
+        margin: auto;
+    }
+
+    .buttom{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;    
+    }
+
+    .main img{
+        width:  500px;
+        height: 420px;
+        border-radius: 10px;
+    
+    }
+    .section{
+        height: 500PX;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
